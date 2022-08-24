@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+        form{
+            border:1px solid black;
+            
+            
+        }
+        form > input{
+            padding:20px;
+            margin: 20px;
+        }
+        button{
+            padding: 20px;
+            text-align: center;
+            background-color: brown;
+            font-size: large;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Ebay search</h1>
+    <form action="https://ebay.com.au/sch/i.html" method="get" target="_blank">
+    <label > Keyword:</label>
+    <input type="text"  name="_nkw"/>
+    <br>
+
+    <input type="radio" name="_sacat" value="0"/> all categories<br>
+    
+    <input type="radio" name="_sacat" value="550" id="art"/> art<br>
+
+    <input type="radio" id="book" value="267"/> book and Magazine<br>
+   
+    <input type="radio" id="coin" value="11116"/>coin<br>
+   
+    <input type="radio" id="music" value="11233"/>music<br>
+    
+    <input type="radio" id="stamp" value="260"/>stamp<br>
+
+   <button type="submit">search</button>
+</form>
+
+</body>
+</html>
+<!-- https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=mobile+phones&_sacat=0 -->
+ <!-- https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=yangchen&_sacat=0 -->
+    <!-- https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=yangchen&_sacat=550&LH_TitleDesc=0 -->
+    <!-- https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=yangchen&_sacat=550&LH_TitleDesc=0 -->
+    <!-- https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=yangchen&_sacat=260&LH_TitleDesc=0 -->
+    <!-- https://www.ebay.com.au/?_nkw=yangchen&_sacat=550 -->
+    
+<!-- What is the action of the form?
+https://www.ebay.com.au/sch/i.html
+
+What is the parameter for the keyword?
+_nkw
+
+What is the parameter for the category?
+_sacat
+
+What are the values for the following category:
+ Art: 550
+ Book and Magazine: 267
+Coins: 11116
+Music:11233
+Stamp:260
+All categories : 0 -->

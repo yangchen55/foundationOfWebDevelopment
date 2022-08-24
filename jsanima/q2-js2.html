@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>exercise</title>
+    <script>
+      function checkAnswer() {
+        // get the first number
+        var input1 = document.getElementById("input1");
+        var Number1 = Number(input1.value);
+
+        // get the second Number1
+        var input2 = document.getElementById("input2");
+        var Number2 = Number(input2.value);
+
+        // get operation
+        var operationSelect = document.getElementById("operationSelect");
+        var operation = operationSelect.value;
+
+        var correctAns;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" size="5" id="input1" />
+    <select>
+      <option value="add">+</option>
+      <option value="sub">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">%</option>
+    </select>
+    <input type="text" size="5" id="input2" /> =
+    <input type="text" size="5" />
+
+    <button onclick="checkAnswer();">check</button>
+    <span></span>
+  </body>
+</html>

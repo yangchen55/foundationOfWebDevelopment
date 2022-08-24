@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1 js2</title>
+    <style>
+      body {
+        font-size: large;
+      }
+      .subject > input {
+        padding: 8px;
+        margin-top: 2px;
+      }
+    </style>
+    <script>
+      function showSelection() {
+        // get the subjects by id
+        var subject1 = document.getElementById("m");
+        var subject1 = subject1.value;
+
+        var subject2 = document.getElementById("c");
+        var subject2 = subject2.value;
+
+        var subject3 = document.getElementById("p");
+        var subject3 = subject3.value;
+
+        var subject4 = document.getElementById("ch");
+        var subject4 = subject4.value;
+
+        //  display the subject in span area
+        var subjectspan = document.getElementById("subjectDisplay");
+        subjectspan.innerHTML =
+          "you have selected" +
+          " " +
+          subject1 +
+          "," +
+          subject2 +
+          "," +
+          subject3 +
+          " " +
+          "and " +
+          subject4;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="subject">
+      <h2>Please select 4 sujects.</h2>
+      <label for="m">Subject 1:</label>
+      <input type="text" id="m" /><br />
+      <label for="c">Subject 2:</label>
+      <input type="text" id="c" /><br />
+      <label for="p">Subject 3:</label>
+      <input type="text" id="p" /><br />
+      <label for="ch">Subject 4:</label>
+      <input type="text" id="ch" /><br />
+      <button onclick="showSelection()">show selection</button>
+    </div>
+    <hr />
+    <span id="subjectDisplay"> this is place to show </span>
+  </body>
+</html>

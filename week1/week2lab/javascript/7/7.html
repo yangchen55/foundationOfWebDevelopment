@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function executeCommand()
+        {
+            var commandTf = document.getElementById("commandInput");
+            var command = commandTf.value;
+            // alert(command);
+
+            var animalImage = document.getElementById("animalDisplay");
+            if (command == "display frog"){
+
+                animalImage.src = "frog.jfif";
+            }
+            else if (command == "display lion") { 
+                animalImage.src = "display lion"
+
+            }
+            else{
+                alert("invalid command")
+            }
+
+
+
+            }
+     
+
+        
+        
+    </script>
+</head>
+<body>
+ enter command:
+ <br>
+<input type="text" id="commandInput" onchange="executeCommand();"/>
+<br>
+<img id="animalDisplay" height="150px"/>
+    
+</body>
+</html>

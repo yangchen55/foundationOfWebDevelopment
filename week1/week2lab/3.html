@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Exercise</title>
+        <script>
+            function showLion(){
+                // get image elemet
+                 var imageElement = document.getElementById("animalHolder")
+                // set file name
+                imageElement.src = "lion.jfif"
+               
+            }
+            function showFrog(){
+                var imageElement = document.getElementById("animalHolder")
+                imageElement.src = "frog.jfif"
+
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="showLion()">lion</button>
+        <button onclick="showFrog()">Frog</button>
+        <br></br>
+    </body>
+    <img id="animalHolder" />
+
+</html>

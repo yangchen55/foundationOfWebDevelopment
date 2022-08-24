@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Exercise 5</title>
+        <script>
+            var lionCount = 0;
+            var frogCount = 0;
+
+           function lionRoar(){
+                var a = document.getElementById("lion");                
+                lionCount = lionCount + 1
+                a.innerHTML = lionCount
+            }
+            function frogtwit(){
+                var a = document.getElementById("frog");
+                
+                frogCount = frogCount + 1
+                a.innerHTML = frogCount
+            }
+           
+           
+           
+        </script>
+    </head>
+    <body>
+       <img src="lion.jfif" height="150px" onmouseover="lionRoar();"/>
+       <img src="frog.jfif" height="150px" onmouseover="frogtwit();" />
+       <br>
+       <p style="color: orange ;">Number of lion clicks: :<button  id ="lion">0</button></p>
+       <p  style="color: green;">Number of frog clicks: <button  id ="frog">0</button></p>
+       
+       
+</body>
+</html>

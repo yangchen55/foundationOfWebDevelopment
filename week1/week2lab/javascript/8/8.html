@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 8</title>
+<script>
+    var leftAnimal = "lion";
+
+function swaplion(){
+  var leftImage = document.getElementById("left");
+  var rightImage = document.getElementById("right");
+
+
+    if (leftAnimal == "lion")
+    {
+        leftAnimal = "frog";
+        leftImage.src = "frog.jfif";
+        rightImage.src = "lion.jfif";
+
+    }
+    else
+    {
+        leftAnimal = "lion";
+        leftImage.src = "lion.jfif";
+        rightImage.src = "frog.jfif";
+    }
+    
+    
+}
+
+
+</script>
+
+</head>
+<body>
+
+    <img src="lion.jfif" alt="lion" id="left" onmouseover="swaplion();">
+    <img src="frog.jfif" alt="lion" id="right" onmouseover="swapfrog();">
+ 
+
+</body>
+</html>

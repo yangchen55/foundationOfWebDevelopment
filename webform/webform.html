@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webform exercise</title>
+    <script>
+        function validateForm(){
+
+            alert("thsi is clicked");
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Whosville Library book search</h1>
+    <form name="myForm" action=" http://library.whosville/bsearch" onsubmit="validateForm();" method="get">
+        <p>
+        <label>Author Name:</label>
+        <input type="text" name="author" id="author">
+        <br>
+    </p>
+    <p>
+        <label>Publication year:</label>
+        <input type="datetime" name="pyear" id="pyear"><br>
+    </p>
+    <p>
+        <label>subject:</label><br>
+        <input type="checkbox" name="math" id="math" value="mathmatic">
+        <label for="math">mathmatic</label><br>
+        <input type="checkbox" name="computer" id="computer" value="computer">
+        <label for="computer"> computer science</label><br>
+        <input type="checkbox" name="biology" id="biology" value="biology">
+        <label for="biology"> biology</label><br>
+        <input type="checkbox" name="physic" id="physic" value="physic">
+        <label for="physic"> physic</label><br>
+        <input type="checkbox" name="chemistry" id="chemistry" value="chemistry">
+        <label for="chemistry"> chemistry</label><br>
+        
+        <br>
+    </p>
+    <p>
+        <button type="submit" id="search"> search </button>
+        <button type="reset" id="clear"> clear </button>
+    </p>
+    </form>
+
+ 
+    
+</body>
+</html>
+
+   <!-- http://library.whosville/bsearch?author=smith&pyear=2020&math=mathmatic&biology=biology -->
+   

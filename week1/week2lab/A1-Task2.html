@@ -1,0 +1,321 @@
+<html>
+<head>
+    <script>
+        function doLion(){
+         var a = document.getElementById("message");
+         a.value = "the lion is clicked";
+        };
+
+        function doFrog(){
+            var b = document.getElementById("message");
+            b.value = "the frog is clicked";
+        }
+
+    </script>
+
+</head>
+<body>
+<button onclick="doLion();">lion</button>
+<button onclick="doFrog();">Frog</button>
+<br>
+<br>
+<input type="text" size="50%;" id ="message"/>
+</body>
+</html><html>
+<head>
+   <title>Famous Australian Beaches</title>
+
+<style>
+body{
+ padding: 70px;
+ margin:20px;
+ font-family: "Times New Roman", Times, serif;
+  text-align:center;
+  vertical-align:center;
+
+
+}
+    #beachTable{
+    color: black;
+    font-size:12px;
+    border:2px;
+    border-collapse: separate;
+  border-spacing: 2px;
+  border-style:solid;
+  border-color:white;
+  border-width:1px;
+    }
+
+    #headerRow{
+     padding: 70px;
+     margin:20px;
+    font-size:22px;
+    background-color: black;
+    color:white;
+
+    }
+    #headerRow >th{
+      padding: 20px;
+    }
+
+    .evenRow{
+    background-color:#E8E8E8;
+    }
+    .oddRow{
+    background-color:#F8F8F8
+    }
+    .oddRow>td{
+    height:10px;
+    width:100;
+    text-align:center;
+    }
+
+     .evenRow>td{
+    height:10px;
+    width:500px;
+    text-align:center;
+    }
+    {
+<!--&lt;!&ndash;    this comment class is the outer div which -->
+<!--contain rating class with different color to show-->
+<!-- the public satisfaction&ndash;&gt;-->}
+
+   .comment{
+   width: 100%;
+  background-color: gray;
+  text-align: center;
+   }
+    .rating{
+    width: 40%;
+     height: 18px;
+      background-color: orange;
+
+    }
+
+</style>
+</head>
+<body>
+<h1 align="center">Famous Australian Beaches</h1>
+<table id="beachTable">
+   <tr id="headerRow">
+       <th>Name of the Beach</th>
+        <th>Location</th>
+        <th>General Information</th>
+        <th>Comments</th>
+
+   </tr>
+    <tr class="oddRow">
+        <td>
+            <h1>WhiteHaven Beach</h1>
+        </td>
+        <td> <b>Queensland</b></td>
+        <td>
+        <p>The most beautiful beach in Australia as <br>
+            voted by Australians is Whitehaven Beach in the Whitsundays. Iconic <br>
+            images of white sands and crystal clear waters are what <br>
+            immediately comes to mind when visitors think about <br>
+            the Whitsundays and although it seems to good to be true, it really<br>
+            does look that spectacular in person. The sand is silica, an extremely high purity form <br>
+            of sand with fine grains that make it very soft to<br>
+            touch and the vivid blue waters make it a magical <br></br>experience.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+
+        </td>
+    </tr>
+    <tr class="evenRow">
+        <td>
+            <h1>Cable Beach</h1>
+        </td>
+        <td> <b>Broome, WA</b></td>
+        <td>
+        <p> second place sits Broome's Cable Beach in Western Australia. First time visitors are regularly speechless when they try to describe its beauty and it's not hard to see why. Although slowly gaining in commercialism due to rave reviews and Instagram, Cable Beach is famous for its untouched stretch of shoreline and its inspiring sunsets. Unlike other beaches on this list, Cable Beach sits on the Indian Ocean rather than the Pacific and orange hued sunsets are the subject of many photographers' works.</p>
+        </td>
+        <td>
+        <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733; &#9733; &#9733;
+
+                </div>
+            </div>
+
+    </tr>
+    <tr class="oddRow">
+        <td>
+            <h1>Burleigh Heads</h1>
+        </td>
+        <td> <b>Burleigh Heads, Gold Coast, QLD<b></td>
+        <td>
+        <p>The Gold Coast has a huge range of contenders in the best beach category but the fan favourite is Burleigh Heads with outstanding surf conditions, picturesque walking tracks and a stunning outlook at the headland. Burleigh Beach gives off a tropical vibe that is warmly embraced by the locals. On any given day of the year, the heavily patrolled beach and parklands are busy with families and swimmers enjoying the simple pleasures of a day at the beach.</p>
+        </td>
+        <td>
+        <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+
+                </div>
+            </div>
+        </td>
+
+    </tr>
+    <tr class="evenRow">
+        <td>
+            <h1>Noosa Main Beach</h1>
+        </td>
+        <td><b> Noosa, Sunshine Coast, QLD </b> </td>
+        <td>
+       <p>
+           Noosa Main Beach is the standout among the many breathtaking beaches on the Sunshine Coast. The golden sands, pristine waters and patrolled beach make it an ideal swimming spot for the whole family. Pods of dolphins may even join you in the waters and humpback whales can be spotted into the distance during their annual migration. Noosa's north-facing direction means that conditions are far more sheltered than other beaches and the warm climate makes it a lively hub that can be enjoyed year round.
+       </p>
+        </td>
+        <td>
+        <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+
+        </td>
+    </tr>
+    <tr class="oddRow">
+        <td>
+            <h1>Kangaroo Island</h1>
+        </td>
+        <td><b>Penneshaw, SA </b></td>
+        <td>
+        <p>Kangaroo Island is one of Australia’s greatest nature based eco destinations with native bushland, an abundance of wildlife, rugged coastlines and pristine beaches wherever you go. While South Australia is better known as Australia’s wine country and a cultural hotspot, the state has so many natural landscapes to offer the intrepid traveller.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="evenRow">
+        <td>
+            <h1>Wineglass Bay</h1>
+        </td>
+        <td> <b>Freycinet National Park, TAS</b></td>
+        <td>
+        <p>One of the most impressive Tasmanian beaches is Wineglass Bay in the Freycinet National Park approximately 2 hours drive from Launceston and 3 hours from Hobart. If you've ever come across promotional material on Tasmania then you doubt would have seen Wineglass Bay be featured. Pink granite peaks and lapping turquoise waters surround the clam shaped shoreline on Tasmania's east coast.</p>
+        </td>
+        <td>
+        <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733; &#9733; &#9733;
+
+                </div>
+            </div>
+
+        </td>
+    </tr>
+    <tr class="oddRow">
+        <td>
+            <h1>Rottnest Island</h1>
+        </td>
+        <td><b>Near Perth, WA</b></td>
+        <td>
+        <p>The most beautiful beach in Australia as <br>
+            voted by Australians is Whitehaven Beach in the Whitsundays. Iconic <br>
+            images of white sands and crystal clear waters are what <br>
+            immediately comes to mind when visitors think about <br>
+            the Whitsundays and although it seems to good to be true, it really<br>
+            does look that spectacular in person. The sand is silica, an extremely high purity form <br>
+            of sand with fine grains that make it very soft to<br>
+            touch and the vivid blue waters make it a magical <br></br>experience.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="evenRow">
+        <td>
+            <h1>Byron Bay</h1>
+        </td>
+        <td><b>Location: Lawson St, Byron Bay, NSW</b></td>
+        <td>
+            <p> Byron Bay has come a long way from its days as a small hippy town with modern resorts, cafes and boutiques popping up in the last 20 years. However, one thing remains the same and that is the quality
+                and quantity of beaches that are adored by all those who visit.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="oddRow">
+        <td>
+            <h1>Fitzroy Island</h1>
+        </td>
+        <td> <b>Location: Near Cairns, North QLD</b></td>
+        <td>
+        <p>Situated in the heart of the Great Barrier Reef, escape to Fitzroy Island on a day trip from Cairns or private boat and anchor up at this idyllic tropical island resort. Fitzroy Island has been
+            a well kept secret among the locals in Cairns, however, its popularity has exploded in recent years due to the rise of social media platforms showcasing this stunning destination online to a global audience.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="evenRow">
+        <td>
+            <h1>Bondi Beach</h1>
+        </td>
+        <td><b>Location: Campbell Parade, Sydney, NSW</b>  </td>
+        <td>
+        <p>The most beautiful beach in Australia as <br>
+            voted by Australians is Whitehaven Beach in the Whitsundays. Iconic <br>
+            images of white sands and crystal clear waters are what <br>
+            immediately comes to mind when visitors think about <br>
+            the Whitsundays and although it seems to good to be true, it really<br>
+            does look that spectacular in person. The sand is silica, an extremely high purity form <br>
+            of sand with fine grains that make it very soft to<br>
+            touch and the vivid blue waters make it a magical <br></br>experience.</p>
+        </td>
+        <td>
+            <h3>comment in rating basis:</h3><hr>
+            <div class="comment">
+                <div class="rating">
+                    &#9733;
+
+                </div>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Exercise 4</title>
+        <script>
+            function lionRoar(){
+                var a = document.getElementById("textholder");
+                // double quote inside double quote is bad and will interfere therefore use single quote doubel quote
+                a.innerHTML = "<span style='color:orange; font-size: large;'>Roar</span>";
+            }
+            function frogtwit(){
+                var a = document.getElementById("textholder");
+                a.innerHTML = "<span style='color:green;'>Ribbit</span>";
+            }
+           
+        </script>
+    </head>
+    <body>
+       <img src="lion.jfif" height="150px" onclick="lionRoar();"/>
+       <img src="frog.jfif" height="150px" onmouseover="frogtwit();" />
+       <br>
+       <span id ="textholder" style="border-style:double; "></span>
+       
+</body>
+</html>
