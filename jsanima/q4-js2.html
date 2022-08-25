@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    var counter = 0;
+    var animationOn = false;
+    var counterAnimation;
+    function IncreNum() {
+      // update the counter value
+      counter = counter + 1;
+      // show the counter value
+      var counterSpan = document.getElementById("counterHolder");
+      counterSpan.innerHTML = counter;
+    }
+    function startCounterAnimation() {
+      if (animationOn == false) {
+        animationOn = true;
+        counterAnimation = setInterval(IncreNum, 1000);
+      }
+    }
+    function stopCounterAnimation() {
+      if (animationOn == true) {
+        animationOn = false;
+        clearInterval(counterAnimation);
+        alert("you have stoped the counter at " + counter);
+      }
+    }
+  </script>
+  <body>
+    <button onclick="startCounterAnimation();">start counter animation</button>
+    <button onclick="stopCounterAnimation();">stop counter animation</button>
+    <br />
+    <span id="counterHolder">0</span>
+  </body>
+</html>
