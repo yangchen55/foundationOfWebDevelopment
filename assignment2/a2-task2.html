@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 2</title>
+    <script>
+      var counter = " ";
+      function changeImg() {
+        // increase the sun
+        counter = counter + "&#9728; ";
+        var sun = document.getElementById("sunholder");
+        sun.innerHTML = counter;
+
+        document.getElementById("1").src = "img/square.png";
+      }
+
+      function changeImg2() {
+        document.getElementById("1").src = "img/rhombus.png";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      src="img/rhombus.png"
+      id="1"
+      onclick="changeImg();"
+      onmouseout="changeImg2();"
+    />
+    <br />
+    <!-- <img src="img/square.png" /> -->
+    <span id="sunholder">&#9728;</span>
+  </body>
+</html>

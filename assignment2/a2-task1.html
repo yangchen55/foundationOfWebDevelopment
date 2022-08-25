@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment2 task1</title>
+    <style>
+      body {
+        font-size: larger;
+      }
+      .buttonGrp > button,
+      input {
+        margin-bottom: 10px;
+      }
+      #numholder {
+        color: green;
+      }
+    </style>
+    <script>
+      // inject the random three green digit value after window loading
+      window.onload = function () {
+        document.getElementById("numholder").innerHTML = Math.floor(
+          Math.random() * (999 - 100 + 1) + 100
+        );
+      };
+      function mult3() {
+        // get the number first
+        var input1 = document.getElementById("numholder");
+        var num = Number(input1.innerHTML);
+
+        var text1 = document.getElementById("text1");
+        var text2 = text1.value;
+
+        // inject the value inside span
+        var mult = document.getElementById("numholder");
+        mult.innerHTML = text2 + " " + num * 3;
+      }
+      function div3() {
+        // get the number first
+        var input1 = document.getElementById("numholder");
+        var num = Number(input1.innerHTML);
+
+        var text1 = document.getElementById("text1");
+        var text2 = text1.value;
+
+        // inject the value inside span
+        var mult = document.getElementById("numholder");
+        mult.innerHTML = text2 + " " + num / 3;
+      }
+      function Reset() {
+        // inject the random three digit value
+        document.getElementById("numholder").innerHTML = Math.floor(
+          Math.random() * (999 - 100 + 1) + 100
+        );
+        // inject the empty value
+        // if it is input type then we must use .value
+        document.getElementById("text1").value = " ";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="buttonGrp">
+      <button onclick="mult3();">multiply by 3</button><br />
+      <button onclick="div3();">Divide by 3</button><br />
+      <button onclick="Reset();">Reset</button><br />
+      <input type="text" id="text1" />
+      <br />
+    </div>
+    <span id="numholder"></span>
+  </body>
+</html>
