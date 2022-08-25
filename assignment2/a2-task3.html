@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyAppointment</title>
+  </head>
+  <body>
+    <h1>My Appointment</h1>
+    <form action="http://myappo.com.au/query" method="get">
+      <table border="0">
+        <tr>
+          <td><label>name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="25
+      "
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>email</label></td>
+          <td><input type="email" id="email" name="email" size="25" /></td>
+        </tr>
+        <tr>
+          <td><label>phone:</label></td>
+          <td><input type="phone" id="phone" name="phone" size="25" /></td>
+        </tr>
+        <tr>
+          <td>time:</td>
+          <td>
+            <select name="time">
+              <option value="1">9-10 am</option>
+              <option value="2">10-11 am</option>
+              <option value="3">12-1 pm</option>
+              <option value="4">1-2 pm</option>
+              <option value="5">2-3 pm</option></select
+            ><br />
+          </td>
+        </tr>
+        <tr>
+          <td>select dentist:</td>
+          <td>
+            <input type="radio" id="woll" value="woll" name="dentist" />
+            <label for="woll">best Wollongong</label>
+            <input type="radio" id="liv" value="liv" name="dentist" />
+            <label for="liv">Perfect smile liverpool</label>
+            <input type="radio" id="shell" value="shell" name="dentist" />
+            <label for="shell">One Dentist Shellharbour</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td>enter your comment:</td>
+          <td>
+            <textarea name="note" value="note" rows="5" cols="30"></textarea>
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>reminder:</td>
+          <td>
+            <input type="checkbox" id="sms" name="sms" />
+            <label for="sms">for notification via sms</label>
+
+            <input type="checkbox" id="em" name="em" />
+            <label for="em">for notification via email</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+<!-- http://myappo.com.au/query?name=tsering+lama
+    &email=tseyang986%40gmail.com
+    &phone=9869183095
+    &time=3
+    &dentist=liv
+    &note=i+have+to+extract+molar
+    &sms=on -->
