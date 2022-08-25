@@ -11,26 +11,46 @@
         var input2 = document.getElementById("input2");
         var Number2 = Number(input2.value);
 
-        // get operation
+        // // get operation
         var operationSelect = document.getElementById("operationSelect");
         var operation = operationSelect.value;
 
-        var correctAns;
+        //  calculate the correct checkAnswer
+        var correctanswer;
+        if (operation == "add") {
+          correctanswer = Number1 + Number2;
+        } else if (operation == "sub") {
+          correctanswer = Number1 - Number2;
+        } else if (operation == "multiply") {
+          correctanswer = Number1 * Number2;
+        } else operation == "divide";
+        correctanswer = Number1 % Number2;
+
+        var answerField = document.getElementById("answer");
+        var userAnswer = Number(answerField.value);
+
+        //  check user answer is correct or not
+        var checkMessageSpan = document.getElementById("checkMessage");
+        if (userAnswer == correctanswer) {
+          checkMessageSpan.innerHTML = "correct";
+        } else {
+          checkMessageSpan.innerHTML = "incorrect, please try again";
+        }
       }
     </script>
   </head>
   <body>
     <input type="text" size="5" id="input1" />
-    <select>
+    <select id="operationSelect">
       <option value="add">+</option>
       <option value="sub">-</option>
       <option value="multiply">*</option>
       <option value="divide">%</option>
     </select>
     <input type="text" size="5" id="input2" /> =
-    <input type="text" size="5" />
+    <input type="text" size="5" id="answer" />
 
     <button onclick="checkAnswer();">check</button>
-    <span></span>
+    <span id="checkMessage">jkhkh</span>
   </body>
 </html>
