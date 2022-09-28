@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes" ?>
+
+
+<!DOCTYPE organizationRecord[
+<!ELEMENT organizationRecord (Company*)>
+<!ATTLIST organizationRecord date CDATA #REQUIRED>
+<!ELEMENT Company (name, servicesRecord)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT servicesRecord (service, days, cost)>
+<!ELEMENT service (#PCDATA)>
+<!ELEMENT days (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+
+]>
+
+
+
+
+<organizationRecord date="01/07/2022">
+<company>
+<name> communityFriend</name>
+<servicesRecord>
+<service>visual art</service>
+<days>monday</days>
+<cost> $10</cost>
+</servicesRecord>
+
+<servicesRecord>
+<service>singing together</service>
+<days>wednesday</days>
+<cost>free</cost>
+</servicesRecord>
+
+<servicesRecord>
+<service>my music workshop</service>
+<days>tuesday</days>
+<cost> $18</cost>
+</servicesRecord>
+
+<servicesRecord>
+<service>my music workshop</service>
+<days>wednesday</days>
+<cost> $18</cost>
+</servicesRecord>
+</company>
+
+<company>
+<name> LCCHealth</name>
+<servicesRecord>
+<service>Health check</service>
+<days>Friday</days>
+<cost>$12</cost>
+</servicesRecord>
+
+<servicesRecord>
+<service>Blood Test</service>
+<days>Friday</days>
+<cost>$15</cost>
+</servicesRecord>
+</company>
+</organizationRecord>

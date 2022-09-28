@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3: task1</title>
+  </head>
+  <body>
+    multiplier:
+    <input type="number" id="inputNum" placeholder="enter number please" />
+    <br />
+    <br />
+
+    <button type="submit" id="start" onclick="startanimation();">start</button>
+    <button type="reset" id="stop" onclick="stopanimation();">stop</button>
+
+    <br />
+    <br />
+    <h6>enter num first and click the start button</h6>
+    <span id="rand1"></span>
+  </body>
+  <script>
+    function start() {
+      // get the value from input (html)
+      var inputNum1 = document.getElementById("inputNum");
+      var Num = Number(inputNum1.value);
+
+      //   for emoji, it is listed in array and generate in random
+      var emoji = ["🍉", "😁", "😒", "👩‍🦰", "🧑‍🦱", "🎄", "🎀", "🚑", "🛼", "🤢"];
+      var index = Math.floor(Math.random() * emoji.length);
+      var index1 = Math.floor(Math.random() * emoji.length);
+
+      //   generate random number to multiply the input value
+      const randNum1 = Math.floor(Math.random() * 1000);
+
+      //   push into the html with backtick
+      var newElement = document.getElementById("rand1");
+      newElement.innerHTML += ` <ol> ${emoji[index]} ${randNum1} * ${Num}  = ${
+        randNum1 * Num
+      }  ${emoji[index1]}  </ol>`;
+    }
+
+    var animation;
+    function startanimation() {
+      var yangchen = document.getElementById("rand1");
+      if (yangchen.childNodes.length === 0) {
+        animation = setInterval(start, 2000);
+      } else {
+        var clearcontent = document.getElementById("rand1");
+        clearcontent.innerHTML = "";
+
+        var inputNum1 = document.getElementById("inputNum");
+        inputNum1.value = Number;
+      }
+    }
+    function stopanimation() {
+      clearInterval(animation);
+    }
+  </script>
+</html>
